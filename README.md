@@ -12,4 +12,6 @@ Upon retreaval, datalogger deployment data is uploaded from the YSI data sonde t
 
 Anomalous data are evaluated to determine whether to flag or reject the suspect values. Data outside the "normal" range of water quality parameters for each site are investigated for validity based on weather data, field observations, QC checks, graphs and instrument diagnostics. Data are rejected if the anomalies are attributed to sensor malfunction and/or excessive fouling. In addition to observations of any physical damage (e.g., compromised DO probe membrane), sensor malfunctions are detected if the reading of the probe is outside the range established for the sensor or the sensor will not post calibrate.
 
-This data has been compiled into a Power BI dashboard, which contains all observed data that has not been rejected due to anomalies in the data collection process. 
+To transform the QAQC'd data into             , I wrote Python code to first append the yearly data into one .csv file that contained all of the monitoring data for each site, and then filter out the data that was flagged for being out-of-range. 
+
+I then compiled this data into an interactive Power BI dashboard, which contains all observed data that has not been rejected due to anomalies in the data collection process. 
